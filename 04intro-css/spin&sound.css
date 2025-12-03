@@ -1,4 +1,4 @@
-/* 
+ /* 
 spin & sound skating css
 author: michelle gutierrez
 color scheme: brown, pink, yellow, purple, cream
@@ -8,46 +8,18 @@ fonts: poppins (headings), roboto (body)
 /* google fonts are linked in html head */
 
 /* body styling */
-body { 
+body {
     font-family: "Roboto", sans-serif;
-     margin: 0;
-     padding: 0;
-     background-color: #FFF8DC;
-     color: #333;
+    margin: 0;
 }
 
-/* heading styling*/
-
-h1 { 
-    font-family:"Poppins", sans-serif;
-    font-weight: 700; 
-    font-size: 2.5rem;
-    color: #4b2e83; 
-    margin: 1rem 0;
-}
-
-h2 { 
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color: #8B5A3C;
-    margin: 1.5rem 0 1rem 0;
-}
-
-h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500; 
-    font-size: 1.5rem;
-    color: #4B2E83; 
-    margin: 1rem 0 0.5rem 0;
-}
-
-/* header stuff here*/
-header { 
-    background-color: #FF5588;
+/* header styling */
+header {
+    background-color: #FF5588; 
     padding: 1.5rem 2rem;
     text-align: center;
 }
+
 header span {
     font-family: "Poppins", sans-serif;
     font-weight: 800; 
@@ -55,109 +27,170 @@ header span {
     color: #FFF8DC; 
 }
 
-/* paragraph styling */
-p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400; 
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 1rem 0;
-    color: #333;
-}
-
-/* navigation stuff here */
-nav { 
-    background-color: #4B2e83;
+/* navigation styling */
+nav {
+    background-color: #4B2E83; 
     padding: 0;
 }
-nav ul { 
-    display: flex;
-    list-style-type: none;
+
+nav ul {
+    display: flex; 
+    list-style-type: none; 
     margin: 0;
     padding: 0;
 }
-nav li { 
-    flex: 1;
+
+nav li {
+    flex: 1; 
 }
-nav a { 
+
+nav a {
     display: block;
     padding: 1rem;
     text-align: center;
-    text-decoration: none;
-    font-family: "poppins", sans-serif;
+    text-decoration: none; 
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
-    color: #FFF8DC;
-    min-height: 48px;
-    line-height: 48px;
+    color: #FFF8DC; 
+    min-height: 48px; 
+    line-height: 48px; 
 }
+
 nav a:hover {
     background-color: #FFDB58; 
     color: #4B2E83; 
 }
 
-/* list stuff */
-ul { 
-    list-style-type: square;
-    margin: 1rem 0;
-    padding-left: 2rem
+nav .current {
+    background-color: #FFDB58; 
+    color: #4B2E83; 
+    font-weight: 700;
 }
 
-ul li { 
+/* main content */
+main {
+    padding: 1rem 10px;
+}
+
+/* headings */
+main h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700; 
+    font-size: 2.5rem;
+    color: #4B2E83; 
+}
+
+main h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2rem; 
+    color: #8B5A3C; 
+    margin-bottom: .2rem; 
+}
+
+main h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500; 
+    font-size: 1.5rem;
+    color: #4B2E83; 
+    margin-bottom: .2rem; 
+}
+
+/* paragraph styling */
+main p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; 
+    font-size: 1.1rem;
+    line-height: 1.6; 
+    margin: 0; 
+    color: #333;
+}
+
+/* ordered list styling */
+main ol {
+    margin: 1rem 0;
+    padding: .5rem 30px;
+    background-color: #FFF8DC;
+}
+
+main ol li {
     margin: 0.5rem 0;
     padding-left: 0.5rem;
 }
 
-ol { 
+/* unordered list styling */
+main ul {
+    list-style-type: square; 
     margin: 1rem 0;
     padding-left: 2rem;
 }
 
-ol li { 
-    margin: 0.5rem 0;
-    padding-left: 0.5rem;
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
 }
 
-dl {
+/* definition list styling */
+main dl {
     margin: 1rem 0;
     padding: 1rem;
-    background-color: #ffdb58;
-    border-radius: 8px;   
-}
-
-dt { 
-    font-family: "poppins", sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #4b2e83;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-dt:first-child {
-    margin-top: 0; 
-}
-
-dd {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-/*borders*/
-dl {
-    margin: 1rem 0;
-    padding: 1rem;
-    background-color: #FFDB58;
+    background-color: #FFDB58; 
     border: 3px solid #8B5A3C; 
     border-radius: 10px; 
 }
 
-/* way-finding - current page indicator */
-.current {
-    background-color: #FFDB58; /* mustard yellow */
-    color: #4B2E83; /* purple text */
+main dl dt {
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
+    font-size: 1.1rem;
+    color: #4B2E83; 
+    margin-top: 1rem;
+}
+
+main dl dt:first-child {
+    margin-top: 0; 
+}
+
+main dl dd {
+    color: #8B5A3C;
+    font-size: .9rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* inline text styling */
+main strong {
+    font-weight: 700;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+}
+
+/* link styling in main content */
+main a {
+    color: #4B2E83; 
+}
+
+main a:hover {
+    color: #FF5588; 
+}
+
+/* footer styling */
+footer {
+    background-color: #8B5A3C; 
+    text-align: center;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #FFF8DC; 
+    letter-spacing: 3px;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* this is a css comment - different from html comments */
