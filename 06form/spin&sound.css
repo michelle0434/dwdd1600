@@ -1,0 +1,298 @@
+/* 
+spin & sound skating css
+author: michelle gutierrez
+color scheme: brown, pink, yellow, purple, cream
+fonts: poppins (headings), roboto (body)
+*/
+
+/* google fonts are linked in html head */
+
+/* body styling */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+/* header styling */
+header {
+    background-color: #FF5588; 
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+header span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800; 
+    font-size: 2rem;
+    color: #FFF8DC; 
+}
+
+/* navigation styling */
+nav {
+    background-color: #4B2E83;
+    padding: 0;
+}
+
+nav ul {
+    display: flex; 
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #FFF8DC;
+    min-height: 48px; 
+    line-height: 48px; 
+}
+
+nav a:hover {
+    background-color: #FFDB58; 
+    color: #4B2E83;
+}
+
+/* way-finding - current page indicator */
+nav .current {
+    background-color: #FFDB58; 
+    color: #4B2E83; 
+    font-weight: 700;
+}
+
+/* main content area */
+main {
+    padding: 1rem 2vw;
+}
+
+/* heading styles */
+main h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700; 
+    font-size: 2.5rem;
+    color: #4B2E83; 
+}
+
+main h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2rem; 
+    color: #8B5A3C;
+    margin-bottom: .2rem; 
+}
+
+main h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500; 
+    font-size: 1.5rem;
+    color: #4B2E83;
+    margin-bottom: .2rem; 
+}
+
+/* paragraph styling */
+main p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; 
+    font-size: 1.1rem;
+    line-height: 1.6; 
+    margin: 0 0 .8rem 0; 
+    color: #333;
+}
+
+/* ordered list styling */
+main ol {
+    margin: 1rem 0;
+    padding: .5rem 30px;
+    background-color: #efefef;
+}
+
+main ol li {
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+}
+
+/* unordered list styling */
+main ul {
+    list-style-type: square; 
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+/* definition list styling */
+main dl {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #FFDB58; 
+    border: 3px solid #8B5A3C; 
+    border-radius: 10px; 
+}
+
+main dl dt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #4B2E83; 
+    margin-top: 1rem;
+}
+
+main dl dt:first-child {
+    margin-top: 0; 
+}
+
+main dl dd {
+    color: #8B5A3C; 
+    font-size: .9rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* inline text styling */
+main strong {
+    font-weight: 700;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+}
+
+/* link styling in main content */
+main a {
+    color: #4B2E83; 
+}
+
+main a:hover {
+    color: #FF5588; 
+}
+
+/* floated image on homepage */
+figure.wrapped {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* gallery stuff here */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #4B2E83;
+}
+
+/* footer styling */
+footer {
+    background-color: #8B5A3C; 
+    text-align: center;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #FFF8DC; 
+    letter-spacing: 3px;
+    clear: both; 
+}
+footer p {
+    margin: 0;
+}
+
+/* form styling */
+.myForm fieldset {
+    border: 2px solid #4B2E83;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.myForm legend {
+    color: #4B2E83; 
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 .5rem;
+}
+
+.myForm label {
+    display: block;
+    margin: .5rem 0;
+    color: #333;
+}
+
+.myForm [type="text"],
+.myForm [type="email"],
+.myForm [type="tel"],
+.myForm select,
+.myForm textarea {
+    display: block;
+    border: solid 1px #888;
+    padding: .5rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: #FFF8DC; 
+}
+
+.myForm textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.myForm :required {
+    background-color: rgba(255, 85, 136, 0.1); 
+}
+
+.myForm [type="submit"] {
+    background-color: #FF5588; 
+    border: 2px solid #4B2E83; 
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.myForm [type="submit"]:hover {
+    background-color: #4B2E83; 
+    border-color: #FF5588; 
+}
+
+/* this is a css comment - different from html comments */
+/* css comments use forward slashes and asterisks */
+/* html comments use <!-- like this --> */
