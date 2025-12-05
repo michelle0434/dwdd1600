@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spin&sound.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Contact Spin & Sound Skating - roller rink and silent disco in Seattle's U-District.">
+    <meta name="author" content="Michelle Gutierrez">
+    <title>Spin & Sound Skating: Contact Us</title>
+</head>
+<body>
+    <!-- Start of the page header -->
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Spin & Sound Skating Logo" width="80" height="80">
+            <div class="header-text">
+                <link rel="icon" type="image/x-icon" href="favicon.ico">
+                <span>Spin & Sound Skating</span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="rollerskating.html">Roller Skating</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Contact Us</h1>
+        
+        <p>Have questions about Spin & Sound Skating? We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+        
+        <form method="get" class="myForm" action="thanks.html">
+            
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>First Name*
+                    <input type="text" name="fname" required>
+                </label>
+                <label>Last Name*
+                    <input type="text" name="lname" required>
+                </label>
+                <label>Email Address*
+                    <input type="email" name="email" required>
+                </label>
+                <label>Phone Number
+                    <input type="tel" name="phone" placeholder="206-555-1234">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inquiry Type</legend>
+                <label>
+                    <input type="radio" name="inquiry" value="general" checked> General Question
+                </label>
+                <label>
+                    <input type="radio" name="inquiry" value="booking"> Booking/Party Information
+                </label>
+                <label>
+                    <input type="radio" name="inquiry" value="silentdisco"> Silent Disco Information
+                </label>
+                <label>
+                    <input type="radio" name="inquiry" value="lessons"> Skate Lessons
+                </label>
+                
+                <label>Best Time to Contact
+                    <select name="contacttime">
+                        <option value="">Please Select</option>
+                        <option value="morning">Morning (9am-12pm)</option>
+                        <option value="afternoon">Afternoon (12pm-5pm)</option>
+                        <option value="evening">Evening (5pm-9pm)</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Areas of Interest</legend>
+                <label>
+                    <input type="checkbox" name="birthday" value="selected"> Birthday Parties
+                </label>
+                <label>
+                    <input type="checkbox" name="group" value="selected"> Group Events
+                </label>
+                <label>
+                    <input type="checkbox" name="disco" value="selected"> Silent Disco Nights
+                </label>
+                <label>
+                    <input type="checkbox" name="rental" value="selected"> Private Rentals
+                </label>
+            </fieldset>
+
+            <label>Your Message*
+                <textarea name="message" required></textarea>
+            </label>
+
+            <input type="submit" value="Send Message">
+            
+        </form>
+        
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2025 Spin & Sound Skating. All rights reserved.</p>
+    </footer>
+</body>
+</html>

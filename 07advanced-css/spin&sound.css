@@ -1,0 +1,356 @@
+/* 
+spin & sound skating css
+author: michelle gutierrez
+color scheme: brown, pink, yellow, purple, cream
+fonts: poppins (headings), roboto (body)
+*/
+
+/* google fonts are linked in html head */
+
+/* change box model */
+* {
+    box-sizing: border-box;
+}
+
+/* body styling */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+/* header styling */
+header {
+    background: linear-gradient(135deg, #FF5588 0%, #4B2E83 100%); /* pink to purple gradient */
+    padding: 1.5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-content img {
+    width: 80px;
+    height: 80px;
+}
+
+.header-text {
+    flex: 1;
+}
+
+header span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800; /* extra bold for site name */
+    font-size: 2rem;
+    color: #FFF8DC; /* cream text on gradient background */
+}
+
+/* navigation styling */
+nav {
+    background-color: #4B2E83; /* purple background */
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex; /* makes list items horizontal */
+    flex-direction: column; /* stacked for mobile */
+    list-style-type: none; /* removes bullets */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex: 1; /* makes menu items equal width */
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none; /* removes underline */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #FFF8DC; /* cream text */
+    border-bottom: 1px solid rgba(255, 248, 220, 0.2);
+}
+
+nav a:hover {
+    background-color: #FFDB58; /* mustard yellow on hover */
+    color: #4B2E83; /* purple text on hover */
+}
+
+/* way-finding - current page indicator */
+nav .current {
+    background-color: #FFDB58; /* mustard yellow */
+    color: #4B2E83; /* purple text */
+    font-weight: 700;
+}
+
+/* hero image */
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* main content area */
+main {
+    padding: 1rem 2vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* heading styles */
+main h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700; /* bold weight */
+    font-size: 2.5rem; /* large size for main heading */
+    color: #4B2E83; /* purple */
+}
+
+main h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600; /* semi-bold weight */
+    font-size: 2rem; /* slightly smaller than h1 */
+    color: #8B5A3C; /* brown */
+    margin-bottom: .2rem; /* small space below heading */
+}
+
+main h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500; /* medium weight */
+    font-size: 1.5rem;
+    color: #4B2E83; /* purple */
+    margin-bottom: .2rem; /* small space below heading */
+}
+
+/* paragraph styling */
+main p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; /* regular weight */
+    font-size: 1.1rem;
+    line-height: 1.6; /* makes text easier to read */
+    margin: 0 0 .8rem 0; /* no margin, keeps text close to heading */
+    color: #333;
+}
+
+/* ordered list styling */
+main ol {
+    margin: 1rem 0;
+    padding: .5rem 30px;
+    background-color: #efefef;
+}
+
+main ol li {
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+}
+
+/* unordered list styling */
+main ul {
+    list-style-type: square; /* changes bullets to squares */
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+/* definition list styling */
+main dl {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #FFDB58; /* mustard yellow background */
+    border: 3px solid #8B5A3C; /* brown border, solid style, 3px thick */
+    border-radius: 10px; /* rounded corners */
+}
+
+main dl dt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #4B2E83; /* purple */
+    margin-top: 1rem;
+}
+
+main dl dt:first-child {
+    margin-top: 0; /* removes top margin from first term */
+}
+
+main dl dd {
+    color: #8B5A3C; /* brown */
+    font-size: .9rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* inline text styling */
+main strong {
+    font-weight: 700;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+}
+
+/* link styling in main content */
+main a {
+    color: #4B2E83; /* purple */
+}
+
+main a:hover {
+    color: #FF5588; /* pink */
+}
+
+/* floated image on homepage */
+figure.wrapped {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* gallery stuff here */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figure img {
+    transition: box-shadow 0.3s ease;
+}
+
+div.gallery figure img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #4B2E83;
+}
+
+/* form styling */
+.myForm fieldset {
+    border: 2px solid #4B2E83; /* purple border */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.myForm legend {
+    color: #4B2E83; /* purple */
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 .5rem;
+}
+
+.myForm label {
+    display: block;
+    margin: .5rem 0;
+    color: #333;
+}
+
+.myForm [type="text"],
+.myForm [type="email"],
+.myForm [type="tel"],
+.myForm select,
+.myForm textarea {
+    display: block;
+    border: solid 1px #888;
+    padding: .5rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: #FFF8DC; /* cream background */
+}
+
+.myForm textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.myForm :required {
+    background-color: rgba(255, 85, 136, 0.1); /* light pink tint for required */
+}
+
+.myForm [type="submit"] {
+    background-color: #FF5588; /* pink */
+    border: 2px solid #4B2E83; /* purple border */
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.myForm [type="submit"]:hover {
+    background-color: #4B2E83; /* purple on hover */
+    border-color: #FF5588; /* pink border on hover */
+}
+
+/* footer styling */
+footer {
+    background-color: #8B5A3C; /* brown */
+    text-align: center;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #FFF8DC; /* cream */
+    letter-spacing: 3px;
+    clear: both; /* keeps footer below floated images */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row; /* horizontal for tablet and desktop */
+    }
+    
+    nav a {
+        border-bottom: none;
+        min-height: 48px;
+        line-height: 48px;
+        padding: 0 1rem;
+    }
+}
